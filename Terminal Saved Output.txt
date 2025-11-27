@@ -1,0 +1,357 @@
+Last login: Fri Feb 14 21:55:58 on ttys000
+rajatarora@RAJAT-ARORAs-MacBook-Air ~ % jvm
+zsh: command not found: jvm
+rajatarora@RAJAT-ARORAs-MacBook-Air ~ % jre
+zsh: command not found: jre
+rajatarora@RAJAT-ARORAs-MacBook-Air ~ % java
+Usage: java [options] <mainclass> [args...]
+           (to execute a class)
+   or  java [options] -jar <jarfile> [args...]
+           (to execute a jar file)
+   or  java [options] -m <module>[/<mainclass>] [args...]
+       java [options] --module <module>[/<mainclass>] [args...]
+           (to execute the main class in a module)
+   or  java [options] <sourcefile> [args]
+           (to execute a source-file program)
+
+ Arguments following the main class, source file, -jar <jarfile>,
+ -m or --module <module>/<mainclass> are passed as the arguments to
+ main class.
+
+ where options include:
+
+    -cp <class search path of directories and zip/jar files>
+    -classpath <class search path of directories and zip/jar files>
+    --class-path <class search path of directories and zip/jar files>
+                  A : separated list of directories, JAR archives,
+                  and ZIP archives to search for class files.
+    -p <module path>
+    --module-path <module path>...
+                  A : separated list of elements, each element is a file path
+                  to a module or a directory containing modules. Each module is either
+                  a modular JAR or an exploded-module directory.
+    --upgrade-module-path <module path>...
+                  A : separated list of elements, each element is a file path
+                  to a module or a directory containing modules to replace
+                  upgradeable modules in the runtime image. Each module is either
+                  a modular JAR or an exploded-module directory.
+    --add-modules <module name>[,<module name>...]
+                  root modules to resolve in addition to the initial module.
+                  <module name> can also be ALL-DEFAULT, ALL-SYSTEM,
+                  ALL-MODULE-PATH.
+    --enable-native-access <module name>[,<module name>...]
+                  allow code in modules to access code and data outside the Java runtime.
+                  <module name> can also be ALL-UNNAMED to indicate code on the class path.
+    --list-modules
+                  list observable modules and exit
+    -d <module name>
+    --describe-module <module name>
+                  describe a module and exit
+    --dry-run     create VM and load main class but do not execute main method.
+                  The --dry-run option may be useful for validating the
+                  command-line options such as the module system configuration.
+    --validate-modules
+                  validate all modules and exit
+                  The --validate-modules option may be useful for finding
+                  conflicts and other errors with modules on the module path.
+    -D<name>=<value>
+                  set a system property
+    -verbose:[class|module|gc|jni]
+                  enable verbose output for the given subsystem
+    -version      print product version to the error stream and exit
+    --version     print product version to the output stream and exit
+    -showversion  print product version to the error stream and continue
+    --show-version
+                  print product version to the output stream and continue
+    --show-module-resolution
+                  show module resolution output during startup
+    -? -h -help
+                  print this help message to the error stream
+    --help        print this help message to the output stream
+    -X            print help on extra options to the error stream
+    --help-extra  print help on extra options to the output stream
+    -ea[:<packagename>...|:<classname>]
+    -enableassertions[:<packagename>...|:<classname>]
+                  enable assertions with specified granularity
+    -da[:<packagename>...|:<classname>]
+    -disableassertions[:<packagename>...|:<classname>]
+                  disable assertions with specified granularity
+    -esa | -enablesystemassertions
+                  enable system assertions
+    -dsa | -disablesystemassertions
+                  disable system assertions
+    -agentlib:<libname>[=<options>]
+                  load native agent library <libname>, e.g. -agentlib:jdwp
+                  see also -agentlib:jdwp=help
+    -agentpath:<pathname>[=<options>]
+                  load native agent library by full pathname
+    -javaagent:<jarpath>[=<options>]
+                  load Java programming language agent, see java.lang.instrument
+    -splash:<imagepath>
+                  show splash screen with specified image
+                  HiDPI scaled images are automatically supported and used
+                  if available. The unscaled image filename, e.g. image.ext,
+                  should always be passed as the argument to the -splash option.
+                  The most appropriate scaled image provided will be picked up
+                  automatically.
+                  See the SplashScreen API documentation for more information
+    @argument files
+                  one or more argument files containing options
+    --disable-@files
+                  prevent further argument file expansion
+    --enable-preview
+                  allow classes to depend on preview features of this release
+To specify an argument for a long option, you can use --<name>=<value> or
+--<name> <value>.
+
+rajatarora@RAJAT-ARORAs-MacBook-Air ~ % javashell
+zsh: command not found: javashell
+rajatarora@RAJAT-ARORAs-MacBook-Air ~ % javashell
+zsh: command not found: javashell
+rajatarora@RAJAT-ARORAs-MacBook-Air ~ % jshell
+|  Welcome to JShell -- Version 23
+|  For an introduction type: /help intro
+
+jshell> String p="priyadarshini";
+p ==> "priyadarshini"
+
+jshell> p.indexOF("i")
+|  Error:
+|  cannot find symbol
+|    symbol:   method indexOF(java.lang.String)
+|  p.indexOF("i")
+|  ^-------^
+
+jshell>  p.indexOf("i")
+$2 ==> 2
+
+jshell> p.indexOf("i",3)
+$3 ==> 10
+
+jshell> p.indexOf("adi")
+$4 ==> -1
+
+jshell> String toUppercase()
+   ...> "anup".toUppercase()
+|  Error:
+|  ';' expected
+|  String toUppercase()
+|                      ^
+
+jshell> p.subString(0,5);
+|  Error:
+|  cannot find symbol
+|    symbol:   method subString(int,int)
+|  p.subString(0,5);
+|  ^---------^
+
+jshell> p.substring(0,5);
+$5 ==> "priya"
+
+jshell> p.substring(4,10);
+$6 ==> "adarsh"
+
+jshell> p.substring(4)
+$7 ==> "adarshini"
+
+jshell> p.contains("ada")
+$8 ==> true
+
+jshell> p.coontains("adi")
+|  Error:
+|  cannot find symbol
+|    symbol:   method coontains(java.lang.String)
+|  p.coontains("adi")
+|  ^---------^
+
+jshell> p.contains("adi")
+$9 ==> false
+
+jshell> p.contains("i")
+$10 ==> true
+
+jshell> p.startsWith("priya")
+$11 ==> true
+
+jshell> p.startsWith("P")
+$12 ==> false
+
+jshell> String
+String                            StringBuffer                      StringBufferInputStream           StringBuilder                     StringIndexOutOfBoundsException   
+StringJoiner                      StringReader                      StringTokenizer                   StringWriter                      
+
+Signatures:
+java.lang.String
+
+<press tab again to see documentation>
+jshell> String       toUpperCase()
+   ...>   "anup".toUppperCase()
+|  Error:
+|  ';' expected
+|  String       toUpperCase()
+|                            ^
+
+jshell> p.UpperCase()
+|  Error:
+|  cannot find symbol
+|    symbol:   method UpperCase()
+|  p.UpperCase()
+|  ^---------^
+
+jshell> p. toUpperCase()
+$13 ==> "PRIYADARSHINI"
+
+jshell> String   toLowerCase()
+   ...> "Anup".toLowerCase()
+|  Error:
+|  ';' expected
+|  String   toLowerCase()
+|                        ^
+
+jshell> int[]   a= new int [5];
+a ==> int[5] { 0, 0, 0, 0, 0 }
+
+jshell> a.length=5
+|  Error:
+|  cannot assign a value to final variable length
+|  a.length=5
+|  ^------^
+
+jshell> a.length
+$15 ==> 5
+
+jshell> for(int i=0;i<a.length;i++){
+   ...>     system.out.println(a[i]);
+   ...> }
+|  Error:
+|  package system does not exist
+|      system.out.println(a[i]);
+|      ^--------^
+
+jshell>  for(int i=0;i<=alength;i++){
+   ...>    ...>     system.out.println(a[i]);
+   ...>    ...> }
+   ...> 
+|  Error:
+|  illegal start of expression
+|     ...>     system.out.println(a[i]);
+|     ^
+|  Error:
+|  illegal start of expression
+|     ...> }
+|     ^
+
+jshell>  for(int i=0;i<=a.length;i++){
+   ...>    ...>    ...>     system.out.println(a[i]);
+   ...>    ...>    ...> }
+   ...> 
+|  Error:
+|  illegal start of expression
+|     ...>    ...>     system.out.println(a[i]);
+|     ^
+|  Error:
+|  illegal start of expression
+|     ...>    ...> }
+|     ^
+
+jshell> for(int i=0;i<=a.length;i++)
+   ...> system.out.println(a[i]);
+|  Error:
+|  package system does not exist
+|  system.out.println(a[i]);
+|  ^--------^
+
+jshell> for(int i=0;i<=a.length;i++)
+   ...> System.out.println(a[i]);
+0
+0
+0
+0
+0
+|  Exception java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 5
+|        at (#16:2)
+
+jshell> a[0]=25
+$17 ==> 25
+
+jshell> a[1]=82
+$18 ==> 82
+
+jshell> a[2]=32
+$19 ==> 32
+
+jshell> a[3]=40
+$20 ==> 40
+
+jshell> a.length
+$21 ==> 5
+
+jshell> a=new int [4];
+a ==> int[4] { 0, 0, 0, 0 }
+
+jshell> a.length
+$23 ==> 4
+
+jshell> for(int i=0;i<a.length;i++)
+   ...> {
+   ...>     s.o.p(a[i]);
+   ...> }
+|  Error:
+|  package s does not exist
+|      s.o.p(a[i]);
+|      ^-^
+
+jshell> for(int i=0;i<a.length;i++)
+   ...>    ...> {
+   ...>            System.out.println(a[i]);
+   ...> }
+|  Error:
+|  illegal start of expression
+|     ...> {
+|     ^
+
+jshell> for ( i=0;i<a.length;i++)
+   ...> {
+   ...>     System.out.println(a[i]);
+   ...> }
+|  Error:
+|  cannot find symbol
+|    symbol:   variable i
+|  for ( i=0;i<a.length;i++)
+|        ^
+|  Error:
+|  cannot find symbol
+|    symbol:   variable i
+|  for ( i=0;i<a.length;i++)
+|            ^
+|  Error:
+|  cannot find symbol
+|    symbol:   variable i
+|  for ( i=0;i<a.length;i++)
+|                       ^
+|  Error:
+|  cannot find symbol
+|    symbol:   variable i
+|      System.out.println(a[i]);
+|                           ^
+
+jshell> for ( i=0;i<=a.length;i++)
+   ...>    ...> {
+   ...>    ...>     System.out.println(a[i]);
+   ...>    ...> }
+   ...> 
+|  Error:
+|  illegal start of expression
+|     ...> {
+|     ^
+
+jshell> for(int i=0; i<a.length; i++)
+   ...> {
+   ...>     System.out.println(a[i]);
+   ...> }
+0
+0
+0
+0
+
+jshell> 

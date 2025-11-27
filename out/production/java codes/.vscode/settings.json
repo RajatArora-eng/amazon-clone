@@ -1,0 +1,26 @@
+{
+    "files.autoSave": "afterDelay",
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "xprotocol",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 33060,
+            "driver": "MySQL",
+            "name": "MySQL Local",
+            "database": "demo",
+            "username": "root",
+            "password": "Rajat@123",
+            "connectionTimeout": 30
+        }
+    ],
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/Users/rajatarora/Downloads/mysql-connector-j-9.2.0/mysql-connector-j-9.2.0.jar"
+    ],
+    "vsintellicode.java.completionsEnabled": false,
+    "docwriter.style": "Auto-detect"
+}
